@@ -113,7 +113,8 @@ def recommend():
                 hybrid_results.append({
                     "title": title,
                     "author": book.get('authors', 'Unknown Author'),
-                    "score": hybrid_score
+                    "score": hybrid_score,
+                    "cover": book.get('image_url', '')
                 })
         
         # Sort by final hybrid score

@@ -3,30 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Recommendation System</title>
+    <title>BookNest - Personalized Recommendations</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
+    <div class="page-background"></div>
+    <div class="overlay"></div>
+
+    <nav class="navbar">
+        <div class="nav-left">
+            <div class="logo-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+            </div>
+            <div class="logo-text">
+                <span class="brand-name">BookNest</span>
+                <span class="tagline">Discover Stories, Discover You</span>
+            </div>
+        </div>
+        <div class="nav-right">
+            <a href="#" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="#">Favorites</a>
+            <a href="#" class="profile-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </a>
+        </div>
+    </nav>
+
     <div class="container">
-        <header>
-            <h1>Personalized Book Recommendations</h1>
-            <p>Powered by Hybrid Machine Learning (TF-IDF & SVD)</p>
+        <header class="hero-section">
+            <div class="label">Personalized</div>
+            <h1>Book Recommendations</h1>
+            <p class="subtitle">Powered by Hybrid Machine Learning (TF-IDF & SVD)</p>
+            
+            <div class="search-container">
+                <div class="search-box">
+                    <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                    <input type="text" id="search-input" placeholder="Search for a book you love...">
+                    <button id="search-btn">Get Recommendations &rarr;</button>
+                </div>
+            </div>
+            
+            <div class="decorative-text">
+                &mdash; Find books that feel like home &mdash;
+            </div>
         </header>
 
         <main>
-            <div class="search-section">
-                <input type="text" id="search-input" placeholder="Enter a book title or your favorite genre...">
-                <button id="search-btn">Get Recommendations</button>
-            </div>
-            
             <div id="loading" class="hidden">
-                <p>Generating recommendations...</p>
+                <div class="spinner"></div>
+                <p>Curating your personalized library...</p>
             </div>
 
             <div id="results-section">
-                <h2>Your Recommendations</h2>
+                <div class="results-header">
+                    <h2>Your Recommendations</h2>
+                    <a href="#" class="see-all">See All &rarr;</a>
+                </div>
                 <div id="recommendation-list" class="grid-container">
-                    <!-- Recommendations will be populated here via JavaScript -->
+                    <!-- Recommendations populated by JS -->
                 </div>
             </div>
         </main>
