@@ -1,0 +1,29 @@
+# Python virtual environment
+venv/
+env/
+ENV/
+
+# Python compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Machine Learning models (Too large for GitHub)
+models/*.pkl
+models/*.npy
+models/*.h5
+*.pkl
+*.npy
+
+# Logs
+*.log
