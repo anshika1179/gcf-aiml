@@ -4,7 +4,6 @@
 This project aims to build a personalized Book Recommendation System using Machine Learning. It is designed to recommend books according to the user's preferences and previous ratings by combining both content-based and collaborative filtering approaches. This hybrid strategy leverages the strengths of both methods to provide accurate, tailored book suggestions.
 
 ## Key Features
-*Note: The project repository is currently being initialized. The following features are **Planned** for future implementation:*
 - **Personalized book recommendations** (Planned)
 - **Search for books** (Planned)
 - **Select a favorite book** (Planned)
@@ -66,7 +65,7 @@ flowchart TD
 9. **User recommendations** &rarr; Display to user.
 
 ## Project Structure
-*Currently, the repository only contains this README. The following structure is proposed for future implementation:*
+*The backend and frontend scaffolding has been initialized. The ML components are proposed for future implementation:*
 
 ```text
 book-recommendation-system/
@@ -137,7 +136,26 @@ book-recommendation-system/
    ```
 
 ## Flask API Documentation
-*No endpoints are currently implemented in the repository. Once the Flask backend is developed, actual endpoints will be documented here.*
+### 1. Get Recommendations
+- **Endpoint:** `/api/recommend`
+- **Method:** `POST`
+- **Purpose:** Fetches book recommendations based on user query.
+- **Request Body (JSON):**
+  ```json
+  {
+      "query": "1984"
+  }
+  ```
+- **Response (JSON):**
+  ```json
+  {
+      "status": "success",
+      "message": "Recommendations generated successfully.",
+      "recommendations": [
+          {"title": "Brave New World", "author": "Aldous Huxley", "score": 0.95}
+      ]
+  }
+  ```
 
 ## Machine Learning
 *Planned Implementation Details:*
