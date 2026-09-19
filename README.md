@@ -123,7 +123,7 @@ book-recommendation-system/
    ```
 
 4. **Download Dataset:**
-   Download the Kaggle Book Recommendation Dataset (link in the Dataset section below) and place `Books.csv`, `Ratings.csv`, and `Users.csv` into the `data/` directory.
+   Download the Kaggle Book Recommendation Dataset and place `Books.csv`, `Ratings.csv`, and `Users.csv` into the `data/` directory.
 
 5. **Train ML Models:**
    ```bash
@@ -192,11 +192,7 @@ book-recommendation-system/
 - **Dataset limitations:** The Kaggle dataset is static without real-time updates.
 
 ## Dataset and Attribution
-This project uses the **Book Recommendation Dataset** from Kaggle:
-[https://www.kaggle.com/datasets/arashnic/book-recommendation-dataset](https://www.kaggle.com/datasets/arashnic/book-recommendation-dataset)
+This project uses the **Book Recommendation Dataset** from Kaggle.
 
 ## License
 This project does not currently specify a separate software license.
-
-## Author
-[anshika1179](https://github.com/anshika1179)
