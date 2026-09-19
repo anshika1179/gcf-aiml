@@ -190,7 +190,14 @@ book-recommendation-system/
 8. Top recommended books are displayed to the user.
 
 ## Screenshots
-*(Screenshots of the web interface will be added here once the frontend is implemented).*
+### Home Page
+![Home Page](assets/home_page.png)
+
+### Search Results
+![Search Results](assets/search_results.png)
+
+### Recommendations
+![Recommendations](assets/recommendations.png)
 
 ## Future Improvements
 - Better user profiles
@@ -213,4 +220,4 @@ book-recommendation-system/
 This project uses the **Book Recommendation Dataset** from Kaggle.
 
 ## License
-This project does not currently specify a separate software license.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.

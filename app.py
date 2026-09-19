@@ -4,7 +4,10 @@ import joblib
 import pandas as pd
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
-import surprise
+try:
+    import surprise
+except ImportError:
+    print("Warning: scikit-surprise not installed. SVD features disabled.")
 
 app = Flask(__name__)
 
